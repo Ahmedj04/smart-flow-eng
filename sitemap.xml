@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1"
+        xmlns:news="http://www.google.com/schemas/sitemap-news/0.9"
+        xmlns:video="http://www.google.com/schemas/sitemap-video/1.1"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml"
+        xmlns:mobile="http://www.google.com/schemas/sitemap-mobile/1.0">
+
+    <!-- ==================== MAIN PAGES ==================== -->
+    
+    <url>
+        <loc>https://smartfloweng.com/</loc>
+        <lastmod>2026-11-07</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>1.0</priority>
+        <image:image>
+            <image:loc>https://smartfloweng.com/assets/images/Logo/logo.png</image:loc>
+            <image:title>Smart Flow Engineering Logo</image:title>
+            <image:caption>Smart Flow Engineering - Automation, Electrical &amp; Commissioning Specialists</image:caption>
+        </image:image>
+    </url>
+    
+    <url>
+        <loc>https://smartfloweng.com/about.html</loc>
+        <lastmod>2026-11-07</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+    </url>
+    
+    <url>
+        <loc>https://smartfloweng.com/services.html</loc>
+        <lastmod>2026-11-07</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+    </url>
+    
+    <url>
+        <loc>https://smartfloweng.com/sectors.html</loc>
+        <lastmod>2026-11-07</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+    </url>
+    
+    <url>
+        <loc>https://smartfloweng.com/contact.html</loc>
+        <lastmod>2026-11-07</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    
+    <url>
+        <loc>https://smartfloweng.com/certifications.html</loc>
+        <lastmod>2026-11-07</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+
+    <!-- ==================== Blog ==================== -->
+<url>
+        <loc>https://smartfloweng.com/blog.html</loc>
+        <lastmod>2026-11-07</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+
+<url>
+        <loc>https://smartfloweng.com/blog/automation-health-check-downtime-obsolescence-uk-manufacturing.html</loc>
+        <lastmod>2026-11-07</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+
+
+
+
+
+    <url>
+        <loc>https://smartfloweng.com/blog/industrial-automation-services-uk.html</loc>
+        <lastmod>2026-11-07</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+
+    <url>
+        <loc>https://smartfloweng.com/blog/factory-automation-reliability.html</loc>
+        <lastmod>2026-11-07</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+
+    <!-- ==================== SERVICE DETAIL PAGES ==================== -->
+    
+    <url>
+        <loc>https://smartfloweng.com/automation-control.html</loc>
+        <lastmod>2026-11-07</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    
+    <url>
+        <loc>https://smartfloweng.com/electrical-meica.html</loc>
+        <lastmod>2026-11-07</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    
+    <url>
+        <loc>https://smartfloweng.com/drives-motion.html</loc>
+        <lastmod>2026-11-07</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    
+    <url>
+        <loc>https://smartfloweng.com/testing-commissioning.html</loc>
+        <lastmod>2026-11-07</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    
+    <url>
+        <loc>https://smartfloweng.com/technical-support.html</loc>
+        <lastmod>2026-11-07</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+
+    <!-- ==================== SECTOR DETAIL PAGES ==================== -->
+    
+    <url>
+        <loc>https://smartfloweng.com/manufacturing.html</loc>
+        <lastmod>2026-11-07</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    
+    <url>
+        <loc>https://smartfloweng.com/packaging.html</loc>
+        <lastmod>2026-11-07</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    
+    <url>
+        <loc>https://smartfloweng.com/food-beverage.html</loc>
+        <lastmod>2026-11-07</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    
+    <url>
+        <loc>https://smartfloweng.com/water-wastewater.html</loc>
+        <lastmod>2026-11-07</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+
+    <url>
+        <loc>https://smartfloweng.com/kosmek-products.html</loc>
+        <lastmod>2026-11-07</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+
+    <url>
+        <loc>https://smartfloweng.com/products-technology.html</loc>
+        <lastmod>2026-11-07</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+
+<url><loc>https://smartfloweng.com/capability-statement.html</loc><lastmod>2026-11-07</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+<url><loc>https://smartfloweng.com/who-we-support.html</loc><lastmod>2026-11-07</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
+</urlset>

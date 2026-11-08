@@ -1,0 +1,7 @@
+# ============================================
+# ADS.TXT - Smart Flow Engineering
+# Authorized Digital Sellers for Advertising
+# ============================================
+
+google.com, pub-0000000000000000, DIRECT
+google.com, pub-0000000000000000, RESELLER

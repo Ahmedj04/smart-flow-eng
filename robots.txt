@@ -1,0 +1,116 @@
+# ============================================
+# robots.txt — Smart Flow Engineering
+# Website: https://smartfloweng.com
+# ============================================
+
+# --------------------------------------------
+# GENERAL SEARCH-ENGINE ACCESS
+# --------------------------------------------
+
+User-agent: *
+Allow: /
+
+# Block non-public and temporary directories
+Disallow: /temp/
+Disallow: /backup/
+
+# --------------------------------------------
+# GOOGLE
+# --------------------------------------------
+
+User-agent: Googlebot
+Allow: /
+
+User-agent: Googlebot-Image
+Allow: /
+
+# --------------------------------------------
+# MICROSOFT BING
+# --------------------------------------------
+
+User-agent: Bingbot
+Allow: /
+
+# --------------------------------------------
+# OTHER SEARCH ENGINES
+# --------------------------------------------
+
+User-agent: DuckDuckBot
+Allow: /
+
+User-agent: Slurp
+Allow: /
+
+User-agent: Baiduspider
+Allow: /
+
+User-agent: YandexBot
+Allow: /
+
+# --------------------------------------------
+# OPENAI CRAWLERS
+# --------------------------------------------
+
+# Allows Smart Flow Engineering pages to appear
+# in ChatGPT search results and citations
+User-agent: OAI-SearchBot
+Allow: /
+
+# Allows ChatGPT to access pages when requested
+# directly by a user
+User-agent: ChatGPT-User
+Allow: /
+
+# Allows OpenAI's model-training crawler
+# Replace "Allow: /" with "Disallow: /"
+# if you want to opt out of model training
+User-agent: GPTBot
+Allow: /
+
+# --------------------------------------------
+# GOOGLE AI
+# --------------------------------------------
+
+# Allows Google to use website content for its
+# generative AI systems
+User-agent: Google-Extended
+Allow: /
+
+# --------------------------------------------
+# ANTHROPIC CRAWLERS
+# --------------------------------------------
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: Claude-SearchBot
+Allow: /
+
+User-agent: Claude-User
+Allow: /
+
+# --------------------------------------------
+# PERPLEXITY
+# --------------------------------------------
+
+User-agent: PerplexityBot
+Allow: /
+
+# --------------------------------------------
+# COMMON CRAWLERS AND ARCHIVES
+# --------------------------------------------
+
+User-agent: Applebot
+Allow: /
+
+User-agent: Applebot-Extended
+Allow: /
+
+User-agent: CCBot
+Allow: /
+
+# --------------------------------------------
+# SITEMAP
+# --------------------------------------------
+
+Sitemap: https://smartfloweng.com/sitemap.xml

@@ -1,0 +1,51 @@
+{
+  "name": "Smart Flow Engineering",
+  "short_name": "SmartFlowEng",
+  "description": "Smart Flow Engineering supports system integrators, OEMs, contractors and industrial operators with industrial electrical installation, automation integration, drives and control upgrades, testing and commissioning.",
+  "start_url": "/index.html",
+  "display": "standalone",
+  "background_color": "#0B2B5E",
+  "theme_color": "#00A3B2",
+  "orientation": "portrait-primary",
+  "scope": "/",
+  "icons": [
+    {
+      "src": "/assets/images/Logo.logo.png",
+      "sizes": "72x72",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/assets/images/Logo.logo.png",
+      "sizes": "96x96",
+      "type": "image/png"
+    },
+    {
+      "src": "/assets/images/Logo.logo.png",
+      "sizes": "144x144",
+      "type": "image/png"
+    },
+    {
+      "src": "/assets/images/Logo.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Contact Us",
+      "url": "/contact.html",
+      "description": "Get in touch with our engineering team"
+    },
+    {
+      "name": "View Services",
+      "url": "/services.html",
+      "description": "Explore our automation and electrical services"
+    }
+  ],
+  "categories": [
+    "business",
+    "engineering",
+    "automation"
+  ]
+}

@@ -1,0 +1,758 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="format-detection" content="telephone=no">
+    <title>Industrial Automation &amp; Electrical Engineering | Smart Flow Engineering</title>
+    <meta name="description"
+        content="Smart Flow Engineering supports system integrators, OEMs, contractors and industrial operators with electrical installation, automation integration, drives and control upgrades, testing and commissioning.">
+    <meta name="keywords"
+        content="industrial automation, electrical installation, commissioning, reliability support, system integrators, manufacturers, PLC upgrades, factory upgrades, Smart Flow Engineering">
+    <meta name="author" content="Smart Flow Engineering Ltd">
+    <meta name="robots" content="index, follow">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Industrial Automation &amp; Electrical Engineering Solutions | Smart Flow Engineering">
+    <meta property="og:description"
+        content="Smart Flow Engineering supports system integrators, OEMs, contractors and industrial operators with electrical installation, automation integration, drives and control upgrades, testing and commissioning.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://smartfloweng.com">
+
+    <!-- Canonical -->
+    <link rel="canonical" href="https://smartfloweng.com/">
+
+    <!-- Favicon -->
+    <!-- Favicon for all devices -->
+    <link rel="icon" type="image/x-icon" href="assets/images/Logo/logo.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/images/Logo/logo.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/images/Logo/logo.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/images/Logo/logo.png">
+
+    <!-- Fonts & Icons -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700;14..32,800&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="css/main.css?v=20261107-four-credentials">
+</head>
+
+<body>
+
+    <div class="whatsappwidget">
+        <!-- Optional greeting tooltip (auto-hides after 5 seconds) -->
+        <div class="whatsapptooltip" id="whatsappTooltip">
+            <svg viewBox="0 0 24 24" fill="currentColor">
+                <path
+                    d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
+            </svg>
+            Need help? Chat with us!
+        </div>
+
+        <!-- WhatsApp Link with your SVG icon -->
+        <a class="fabwa"
+            href="https://api.whatsapp.com/send?phone=447900138906&text=Hello%20Smart%20Flow%20Engineering%2C%20I%27d%20like%20to%20know%20more%20about%20your%20services."
+            target="_blank" rel="noopener noreferrer">
+            <svg viewBox="0 0 24 24" fill="currentColor">
+                <path
+                    d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
+            </svg>
+        </a>
+    </div>
+
+    <!-- Top Bar -->
+    <div class="top-bar">
+        <div class="marquee">
+            <span><i class="fas fa-medal"></i> Achilles BuildingConfidence Registered | ID: 00272549</span>
+            <span><i class="fas fa-shield-alt"></i> SafeContractor Approved | Certificate: OG5455</span>
+            <span><i class="fas fa-phone-alt"></i> +44-1234 440 530 | sales@smartfloweng.com</span>
+            <span><i class="fas fa-medal"></i> Achilles BuildingConfidence Registered | ID: 00272549</span>
+            <span><i class="fas fa-shield-alt"></i> SafeContractor Approved | Certificate: OG5455</span>
+            <span><i class="fas fa-phone-alt"></i> +44-1234 440 530 | sales@smartfloweng.com</span>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+      <nav>
+    <div class="container nav-flex">
+        <a href="/" class="logo">
+            <div class="logo-text">
+                <img src="assets/images/Logo/logo.png" alt="Smart Flow Engineering">
+            </div>
+        </a>
+
+        <div class="nav-links">
+            <a href="/" class="active">Home</a>
+            <a href="about.html">About Us</a>
+
+            <div class="dropdown">
+                <a href="services.html" class="dropdown-trigger">
+                    Services <i class="fas fa-chevron-down"></i>
+                </a>
+
+                <div class="dropdown-menu">
+                    <div class="dropdown-grid">
+
+                        <div class="dropdown-column"><div class="dropdown-item">
+                                <i class="fas fa-bolt"></i>
+                                <div>
+                                    <a href="electrical-meica.html">Electrical Systems</a>
+                                    <span>Panel Wiring &amp; Site Distribution</span>
+                                </div>
+                            </div>
+                            <div class="dropdown-item">
+                                <i class="fas fa-sliders-h"></i>
+                                <div>
+                                    <a href="drives-motion.html">Industrial Drives</a>
+                                    <span>AC/DC Drive Assessment &amp; Retrofits</span>
+                                </div>
+                            </div>
+
+                            <div class="dropdown-item">
+                                <i class="fas fa-microchip"></i>
+                                <div>
+                                    <a href="automation-control.html">Controls &amp; PLCs</a>
+                                    <span>PLC, HMI &amp; Control Architecture</span>
+                                </div>
+                            </div>
+
+                            
+                        </div>
+
+                        <div class="dropdown-column">
+                            <div class="dropdown-item">
+                                <i class="fas fa-clipboard-check"></i>
+                                <div>
+                                    <a href="testing-commissioning.html">Testing &amp; Commissioning</a>
+                                    <span>I/O Checks, Start-up &amp; Handover</span>
+                                </div>
+                            </div>
+
+                            <div class="dropdown-item">
+                                <i class="fas fa-headset"></i>
+                                <div>
+                                    <a href="technical-support.html">Drives &amp; Motor Control</a>
+                                    <span>Planned Maintenance &amp; Shutdown Support</span>
+                                </div>
+                            </div>
+                            <div class="dropdown-item">
+                                <i class="fas fa-robot" aria-hidden="true"></i>
+                                <div>
+                                    <a href="kosmek-products.html">KOSMEK Products</a>
+                                    <span>Clamping, Workholding &amp; Automation</span>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <a href="who-we-support.html">Who We Support</a>
+            <a href="sectors.html">Sectors</a>
+            <a href="capability-statement.html">Capability Statement</a>
+            
+
+            <!-- Blog -->
+            <a href="blog.html">Blog</a>
+
+            <a href="contact.html">Contact</a>
+            <a href="contact.html?enquiry=project" class="quote-nav-btn">Discuss a Project</a>
+        </div>
+
+        <div class="mobile-menu-btn" id="mobileMenuBtn">
+            <i class="fas fa-bars"></i>
+        </div>
+    </div>
+</nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <video class="hero-video-bg" autoplay muted loop playsinline>
+            <source src="assets/videos/vid.mp4" type="video/mp4">
+        </video>
+        <div class="hero-overlay"></div>
+        <div class="container">
+            <div class="hero-content">
+                <!--Subhead Badge -->
+                <div style="display: flex; justify-content: flex-start; margin-bottom: 12px;">
+                    <span class="section-tag"
+                        style="background: rgba(0, 163, 178, 0.25); color: #2dd4bf; border: 1px solid rgba(45, 212, 191, 0.4); font-size: 0.9rem; letter-spacing: 1px;">
+                        Integrate. Install. Upgrade.
+                    </span>
+                </div>
+
+                <h1
+                    style="font-size: clamp(2.3rem, 4.5vw, 3.6rem); line-height: 1.12; max-width: 880px; margin-bottom: 14px;">
+                    Industrial Automation &amp; Electrical Engineering Solutions
+                </h1>
+
+                <!-- Specialist Focus Pill -->
+                <div class="specialist-focus-tag">
+                    <span>Drives</span> <span class="bullet">•</span>
+                    <span>Controls</span> <span class="bullet">•</span>
+                    <span>Electrical</span>
+                </div>
+
+                <p
+                    style="font-size: 1.15rem; color: rgba(255,255,255,0.95); max-width: 780px; margin-bottom: 30px; font-weight: 500; line-height: 1.55;">
+                    Smart Flow Engineering supports system integrators, OEMs, contractors and industrial operators with electrical installation, automation integration, drives and control upgrades, testing and commissioning.
+                </p>
+
+                <div class="hero-buttons">
+                    <a href="contact.html" class="btn-primary"
+                        style="padding: 15px 34px; font-size: 1.05rem; box-shadow: 0 10px 25px rgba(0,163,178,0.4);">
+                        Discuss a Project →
+                    </a>
+<a href="capability-statement.html" class="btn-secondary" style="border-color: #fff; color: #fff;">View Our Capabilities →</a>
+                </div>
+
+                <!-- Location Badge -->
+                <div class="location-badge">
+                    <i class="fas fa-location-dot"></i> South England | UK Project Capability
+                </div>
+            </div>
+        </div>
+    </section>
+
+<section class="health-check-section" id="who-we-support">
+        <div class="container">
+            <div class="health-check-card">
+                <div class="health-check-content">
+                    <h2>Who We Support</h2>
+                    <p style="font-size: 1.2rem; color: #2dd4bf; font-weight: 700; margin-bottom: 14px;">Engineering support that helps projects move forward.</p>
+                    <p>Smart Flow provides focused work packages and additional site engineering capacity for contractors, system integrators, OEMs and asset owners. We agree scope, resources, responsibilities and timing for each project.</p>
+
+                    <div class="health-check-features">
+                        <div class="health-feature-item">
+                            <i class="fas fa-sliders-h"></i>
+                            <div><strong>Tier 1 &amp; Industrial Contractors</strong><br>Electrical installation and completion packages
+                            </div>
+                        </div>
+                        <div class="health-feature-item">
+                            <i class="fas fa-microchip"></i>
+                            <div><strong>System Integrators</strong><br>Field wiring, I/O checks and commissioning support</div>
+                        </div>
+                        <div class="health-feature-item">
+                            <i class="fas fa-bolt"></i>
+                            <div><strong>OEMs &amp; Machine Builders</strong><br>Machinery installation and electrical integration</div>
+                        </div>
+                        <div class="health-feature-item">
+                            <i class="fas fa-box-archive"></i>
+                            <div><strong>Industrial Operators &amp; Asset Owners</strong><br>Upgrades, shutdowns and maintenance support
+                            </div>
+                        </div>
+                    </div>
+
+                    <a href="who-we-support.html" class="btn-secondary"
+                        style="background: #00A3B2; color: white; border: none; padding: 14px 30px; font-weight: 700;">
+                        Who We Support →
+                    </a>
+                </div>
+
+                <div class="health-check-deliverables">
+                    <h3>Project Work Packages:</h3>
+                    <ul>
+                        <li><i class="fas fa-arrow-right"></i> Electrical installation and completion</li>
+                        <li><i class="fas fa-arrow-right"></i> Drive, PLC and HMI upgrades</li>
+                        <li><i class="fas fa-arrow-right"></i> Equipment integration and commissioning</li>
+                        <li><i class="fas fa-arrow-right"></i> Shutdown and planned-outage support</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<section class="prod-eng-section">
+        <div class="container">
+            <div class="prod-eng-card">
+                <h2>Engineering support that helps projects move forward</h2>
+                <div class="prod-eng-quote">
+                    From site installation and electrical completion to drive and control upgrades, integration and commissioning, we provide focused engineering support at critical stages of industrial projects.
+                </div>
+
+                <p style="color: rgba(255,255,255,0.8); max-width: 740px; margin: 0 auto 30px; font-size: 0.95rem;">
+                    The technical scope, delivery responsibilities and any partner-supported activities are confirmed against your application and existing site infrastructure.
+                </p>
+
+                
+            </div>
+        </div>
+    </section>
+
+<section class="five-steps-section" id="capabilities">
+        <div class="container">
+            <div class="section-header">
+                <h2>Engineering Support Across the Project Lifecycle</h2>
+                <p>Electrical installation, drives, controls, integration and commissioning support for industrial project teams.</p>
+            </div>
+
+            <div class="five-steps-grid">
+                <!-- 1. Assess -->
+                <div class="step-card">
+                    <div class="step-num">01</div>
+                    <h3>Install</h3>
+                    <h4 style="font-size: 0.95rem; color: var(--secondary); margin-bottom: 10px;">Electrical Engineering &amp; Installation</h4>
+                    <p>Site wiring, cabling, containment, panel terminations and electrical modifications for defined installation and completion packages.</p>
+
+                </div>
+
+                <!-- 2. Maintain -->
+                <div class="step-card">
+                    <div class="step-num">02</div>
+                    <h3>Drives</h3>
+                    <h4 style="font-size: 0.95rem; color: var(--secondary); margin-bottom: 10px;">Drive Replacement &amp; Motor Control
+                    </h4>
+                    <p>Industrial drive replacement and retrofit support, including installation, motor-control modifications and commissioning.</p>
+                </div>
+
+                <!-- 3. Upgrade -->
+                <div class="step-card">
+                    <div class="step-num">03</div>
+                    <h3>Controls</h3>
+                    <h4 style="font-size: 0.95rem; color: var(--secondary); margin-bottom: 10px;">PLC, HMI &amp; Control Systems</h4>
+                    <p>PLC and HMI upgrade support, control panel modifications, equipment interfaces and obsolescence planning for existing machinery.</p>
+                </div>
+
+                <!-- 4. Integrate -->
+                <div class="step-card">
+                    <div class="step-num">04</div>
+                    <h3>Integrate</h3>
+                    <h4 style="font-size: 0.95rem; color: var(--secondary); margin-bottom: 10px;">Automation Integration
+                    </h4>
+                    <p>We integrate new equipment into existing machinery and production environments: electrical
+                        installation, control integration, panel/field wiring, cabling, I/O testing, and system
+                        modifications.</p>
+                </div>
+
+                <!-- 5. Commission -->
+                <div class="step-card">
+                    <div class="step-num">05</div>
+                    <h3>Commission</h3>
+                    <h4 style="font-size: 0.95rem; color: var(--secondary); margin-bottom: 10px;">Testing &amp;
+                        Commissioning</h4>
+                    <p>From installation through to production: testing, I/O checks, functional testing, fault finding,
+                        start-up, commissioning, and handover.</p>
+                </div>
+            <div class="step-card">
+    <div class="step-num">06</div><h3>Support</h3>
+    <h4 style="font-size: 0.95rem; color: var(--secondary); margin-bottom: 10px;">Maintenance &amp; Reliability</h4>
+    <p>Planned maintenance, obsolescence assessments, fault investigation and shutdown support after installation and during agreed outage windows.</p>
+</div>
+</div>
+        </div>
+    </section>
+
+<section class="sprint-partnership-section" id="sprint-electric-partnership" aria-labelledby="sprint-partnership-title">
+    <div class="container sprint-partnership-grid">
+        <div class="sprint-partnership-copy">
+            <span class="section-tag">Sprint Electric Partnership</span>
+            <img class="sprint-partnership-logo" src="assets/images/partners/partner5.jpeg" alt="Sprint Electric" width="289" height="34" loading="lazy">
+            <h2 id="sprint-partnership-title">Industrial Drive Replacement &amp; Retrofits</h2>
+            <p>Our partnership with Sprint Electric supports industrial drive replacement and retrofit projects. Smart Flow provides application assessment, installation, integration and commissioning support around your existing equipment and operating requirements.</p>
+            <p>Whether you are replacing an ageing drive or planning a machinery upgrade, talk to us about the equipment, required performance and installation window.</p>
+            <div class="sprint-partnership-actions">
+                <a href="contact.html?enquiry=upgrade" class="btn-primary">Discuss a Drive Replacement →</a>
+                <a href="drives-motion.html" class="sprint-partnership-link">View Drive Services →</a>
+            </div>
+        </div>
+        <div class="sprint-partnership-scope">
+            <h3>Drive Replacement Support</h3>
+            <ul>
+                <li><i class="fas fa-magnifying-glass" aria-hidden="true"></i><div><h4>Review the Application</h4><p>Assess the existing drive, motor-control requirements and equipment interfaces.</p></div></li>
+                <li><i class="fas fa-bolt" aria-hidden="true"></i><div><h4>Install &amp; Integrate</h4><p>Agree the replacement scope, electrical connections and control modifications.</p></div></li>
+                <li><i class="fas fa-clipboard-check" aria-hidden="true"></i><div><h4>Test &amp; Commission</h4><p>Carry out agreed parameter checks, functional testing and handover support.</p></div></li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+<section class="typical-projects-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>How We Support Projects</h2>
+                <p>Discuss your installation, retrofit, integration or commissioning package. Resources, supervision and delivery responsibilities are confirmed for each requirement.</p>
+            </div>
+            <div class="projects-grid">
+                <div class="project-item-card">
+                    <div class="project-check-icon"><i class="fas fa-check"></i></div>
+                    <span>Electrical installation &amp; completion</span>
+                </div>
+                <div class="project-item-card">
+                    <div class="project-check-icon"><i class="fas fa-check"></i></div>
+                    <span>PLC upgrades &amp; retrofits</span>
+                </div>
+                <div class="project-item-card">
+                    <div class="project-check-icon"><i class="fas fa-check"></i></div>
+                    <span>Control panel replacement</span>
+                </div>
+                <div class="project-item-card">
+                    <div class="project-check-icon"><i class="fas fa-check"></i></div>
+                    <span>Factory shutdown support</span>
+                </div>
+                <div class="project-item-card">
+                    <div class="project-check-icon"><i class="fas fa-check"></i></div>
+                    <span>Conveyor installation &amp; wiring</span>
+                </div>
+                <div class="project-item-card">
+                    <div class="project-check-icon"><i class="fas fa-check"></i></div>
+                    <span>Machine relocation</span>
+                </div>
+                <div class="project-item-card">
+                    <div class="project-check-icon"><i class="fas fa-check"></i></div>
+                    <span>I/O checks &amp; functional testing</span>
+                </div>
+                <div class="project-item-card">
+                    <div class="project-check-icon"><i class="fas fa-check"></i></div>
+                    <span>Drive replacement &amp; retrofits</span>
+                </div>
+            </div>
+            <p class="project-scope-note">Work packages include agreed resources, supervision, installation checks and handover requirements. Any partner-supported activities are identified in the proposal.</p>
+            <a href="contact.html?enquiry=support" class="btn-primary">Request Engineering Support →</a>
+        </div>
+    </section>
+
+
+
+<section class="about-premium">
+        <div class="container">
+            <div class="section-header-luxe">
+                <h2 class="about-headline-luxe">Specialist Delivery,<br>Focused on Your Project</h2>
+                <div class="header-glow-line"></div>
+                <p class="section-subtitle-luxe">Industrial electrical installation, automation integration, drive and control upgrades, testing and commissioning for project delivery teams.</p>
+            </div>
+            <div class="about-grid-luxe">
+                <div class="about-text-glow">
+                    <p>We agree the work package, site requirements and handover information with your delivery team.</p>
+
+                    <!-- ACCREDITATION BADGES - HIGHLIGHTED -->
+                    <div style="display:flex; flex-direction:column; gap:16px; margin:28px 0 20px;">
+
+                        <div
+                            style="width:min(420px, 100%); box-sizing:border-box; background:linear-gradient(135deg, #0B2B5E, #0D2F55); padding:12px 20px; border-radius:60px; display:inline-flex; align-items:center; gap:10px;">
+                            <i class="fas fa-crown" style="color:#FFD700; font-size:1.2rem;"></i>
+                            <span style="color:white; font-weight:700; letter-spacing:0.5px;">Achilles Registered</span>
+                            <span style="color:rgba(255,255,255,0.7); font-size:0.75rem;">BuildingConfidence Registered</span>
+                        </div>
+
+                        <div
+                            style="width:min(420px, 100%); box-sizing:border-box; background:linear-gradient(135deg, #1a4a7a, #0B2B5E); padding:12px 20px; border-radius:60px; display:inline-flex; align-items:center; gap:10px;">
+                            <i class="fas fa-shield-alt" style="color:#2dd4bf; font-size:1.2rem;"></i>
+                            <span style="color:white; font-weight:700;">SafeContractor</span>
+                            <span style="color:rgba(255,255,255,0.7); font-size:0.75rem;">SSIP Approved</span>
+                        </div>
+
+                    </div>
+                    <!-- END BADGES -->
+
+                    <div class="feature-grid-luxe">
+                        <div class="feature-card-luxe">
+                            <div class="feature-icon-luxe"><i class="fas fa-bolt"></i>
+                                <div class="icon-glow"></div>
+                            </div>
+                            <div>
+                                <h4>Planned Mobilisation</h4>
+                                <p>Timing and availability agreed per project</p>
+                            </div>
+                        </div>
+                        <div class="feature-card-luxe">
+                            <div class="feature-icon-luxe"><i class="fas fa-user-gear"></i></div>
+                            <div>
+                                <h4>Experienced Engineers</h4>
+                                <p>Skilled industrial automation specialists</p>
+                            </div>
+                        </div>
+                        <div class="feature-card-luxe">
+                            <div class="feature-icon-luxe"><i class="fas fa-clipboard-check"></i></div>
+                            <div>
+                                <h4>Installation Through Commissioning</h4>
+                                <p>Defined installation, testing and handover scope</p>
+                            </div>
+                        </div>
+                        <div class="feature-card-luxe">
+                            <div class="feature-icon-luxe"><i class="fas fa-box-open"></i></div>
+                            <div>
+                                <h4>Small Packages Independently</h4>
+                                <p>Self-managed packages delivered safely</p>
+                            </div>
+                        </div>
+                        <div class="feature-card-luxe" >
+                            <div class="feature-icon-luxe"><i class="fas fa-sliders-h"></i></div>
+                            <div>
+                                <h4>Flexible Project Support</h4>
+                                <p>Engineering availability aligned to agreed project requirements</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="partner-card-luxe">
+                    <div class="animated-border"></div>
+                    <div class="partner-glow-orb"></div>
+                    <div class="partner-icon-luxe">
+                        <div class="icon-pulse-ring"></div>
+                        <a href="https://pearlcon.com" target="_blank">
+                            <img src="assets/images/Logo/pearlcon.jpg" alt="Pearlcon"
+                                style="width: 200px; height: 200px; object-fit: contain;">
+                        </a>
+                    </div>
+
+                    <h3>Engineering Excellence<span class="group-highlight"></span></h3>
+                    <div class="partner-glow-divider"></div>
+                    <p>
+                        Smart Flow supports electrical and automation work packages. Achilles BuildingConfidence registration and SafeContractor approval support supplier prequalification.
+                        <span>
+                            Pearlcon is our parent company. Its experience and support are distinct from Smart Flow’s own operating history.
+                            <br>
+                            Project scope and any partner-supported activities are agreed before work starts.
+                        </span>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<section class="typical-projects-section" aria-labelledby="supplier-credentials-title"><div class="container">
+<div class="section-header"><h2 id="supplier-credentials-title">Certifications and Accreditations</h2>
+<p>Supporting formal supplier prequalification and contractor-assurance processes.</p></div>
+<div class="stats-grid supplier-credentials"><div class="stat-box">
+                <div class="number">Achilles</div>
+                <p>BuildingConfidence Gold</p>
+            </div><div class="stat-box">
+                <div class="number">SafeContractor</div>
+                <p>SSIP Approved</p>
+            </div><div class="stat-box">
+                <div class="number">ICO Registered</div>
+                <p>Data Protection Compliant</p>
+            </div><div class="stat-box">
+                <div class="number">24/7</div>
+                <p>UK-Wide Coverage</p>
+            </div></div>
+<a href="certifications.html" class="btn-primary">View Certifications &amp; Accreditations →</a>
+</div></section>
+
+<section class="kosmek-feature" aria-labelledby="kosmek-partnership-title">
+        <div class="container kosmek-split">
+            <div>
+                <span class="kosmek-eyebrow">Technology applications</span>
+                <div class="kosmek-lockup" aria-label="KOSMEK technology and Smart Flow Engineering">
+                        <img src="assets/images/kosmek/kosmek-logo.png" alt="KOSMEK" width="440" height="71">
+                        <span aria-hidden="true">×</span>
+                        <img class="kosmek-smartflow-logo" src="assets/images/Logo/logo.png" alt="Smart Flow Engineering">
+                    </div>
+                <h2 id="kosmek-partnership-title">KOSMEK precision.<br><span>Smart Flow integration.</span></h2>
+                <p class="kosmek-intro">Explore KOSMEK clamping, workholding and factory automation technology. Product suitability, supply arrangements and integration responsibilities are agreed for each enquiry.</p>
+                <p>From robot tooling to machine changeovers, we help turn your application requirements into a plan for integration, testing and commissioning.</p>
+                <ul class="kosmek-tags" aria-label="Application areas">
+                    <li>Precision clamping</li><li>Robot tooling</li><li>Machine changeovers</li>
+                </ul>
+                <div class="kosmek-actions">
+                    <a href="kosmek-products.html" class="btn-primary">Explore KOSMEK products <i class="fas fa-arrow-right" aria-hidden="true"></i></a>
+                    <a href="#kosmek-quote-dialog" class="kosmek-text-link" data-kosmek-quote data-quote-range="" data-quote-component="" data-quote-source="homepage-partnership" aria-haspopup="dialog" aria-controls="kosmek-quote-dialog">Request a KOSMEK quote <i class="fas fa-arrow-right" aria-hidden="true"></i></a>
+                </div>
+            </div>
+            <figure class="kosmek-feature-visual">
+                <img src="assets/images/kosmek/factory-automation.jpg" alt="Robotic automation and press equipment in a KOSMEK application" width="1533" height="858" loading="lazy" decoding="async">
+                <figcaption><strong>Component and integration support.</strong><span>KOSMEK technology. Smart Flow engineering support.</span></figcaption>
+            </figure>
+        </div>
+    </section>
+
+<section class="strategic-partners-section" aria-labelledby="strategic-partners-title">
+    <div class="container">
+        <div class="section-header">
+            <span class="section-tag">Engineering &amp; Technology Relationships</span>
+            <h2 id="strategic-partners-title">Our Strategic Partners</h2>
+            <p>Connections across industrial engineering and automation.</p>
+        </div>
+        <div class="strategic-partners-marquee">
+            <div class="strategic-partners-track"><ul class="strategic-partner-list" aria-label="Strategic partners"><li class="strategic-partner-item"><div class="strategic-partner-logo-surface"><img src="assets/images/partners/partner5.jpeg" alt="Sprint Electric" loading="lazy" width="144" height="72"></div></li><li class="strategic-partner-item"><div class="strategic-partner-logo-surface"><img src="assets/images/partners/partner6.jpg" alt="KOSMEK" loading="lazy" width="144" height="72"></div></li><li class="strategic-partner-item"><div class="strategic-partner-logo-surface"><img src="assets/images/partners/partner1.jpg" alt="Berkine" loading="lazy" width="144" height="72"></div></li><li class="strategic-partner-item"><div class="strategic-partner-logo-surface"><img src="assets/images/partners/partner2.jpg" alt="Karachaganak" loading="lazy" width="144" height="72"></div></li><li class="strategic-partner-item"><div class="strategic-partner-logo-surface"><img src="assets/images/partners/partner3.jpg" alt="Esnad" loading="lazy" width="144" height="72"></div></li><li class="strategic-partner-item"><div class="strategic-partner-logo-surface"><img src="assets/images/partners/ppl-logo-2.png" alt="PPL" loading="lazy" width="144" height="72"></div></li></ul><ul class="strategic-partner-list" aria-hidden="true"><li class="strategic-partner-item"><div class="strategic-partner-logo-surface"><img src="assets/images/partners/partner5.jpeg" alt="" loading="lazy" width="144" height="72"></div></li><li class="strategic-partner-item"><div class="strategic-partner-logo-surface"><img src="assets/images/partners/partner6.jpg" alt="" loading="lazy" width="144" height="72"></div></li><li class="strategic-partner-item"><div class="strategic-partner-logo-surface"><img src="assets/images/partners/partner1.jpg" alt="" loading="lazy" width="144" height="72"></div></li><li class="strategic-partner-item"><div class="strategic-partner-logo-surface"><img src="assets/images/partners/partner2.jpg" alt="" loading="lazy" width="144" height="72"></div></li><li class="strategic-partner-item"><div class="strategic-partner-logo-surface"><img src="assets/images/partners/partner3.jpg" alt="" loading="lazy" width="144" height="72"></div></li><li class="strategic-partner-item"><div class="strategic-partner-logo-surface"><img src="assets/images/partners/ppl-logo-2.png" alt="" loading="lazy" width="144" height="72"></div></li></ul></div>
+        </div>
+    </div>
+</section>
+
+<section style="background: var(--gradient-primary); color: white;">
+        <div class="container" style="text-align: center;">
+            <h2 style="color: white;">Need Electrical or Automation Engineering Support?</h2>
+            <p style="color: rgba(255,255,255,0.9); max-width: 600px; margin: 0 auto 24px;">Tell us about your project, installation package, upgrade or commissioning requirement. We will discuss the scope and how Smart Flow can support you.
+            </p>
+            <a href="contact.html" class="btn-secondary" style="border-color: white; color: white;">Discuss a Project →</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <!-- First column: Logo + details + SOCIAL MEDIA LINKS -->
+                <div class="footer-col">
+                    <img src="assets/images/Logo/logo.png" alt="Smart Flow Engineering Logo"
+                        onerror="this.src='https://placehold.co/200x60?text=Smart+Flow+Engineering'">
+                    <a href="https://pearlcon.com/">
+                        <p>A Pearlcon Company</p>
+                    </a>
+                    <p>Achilles Registered | SafeContractor Approved</p>
+                    <p>Company No: 16474909</p>
+
+                    <!-- Social Media Links-->
+                    <div class="social-links">
+                        <a href="https://www.linkedin.com/company/smartflow-engineering/" class="social-icon"
+                            aria-label="LinkedIn" target="_blank" rel="noopener noreferrer">
+                            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false">
+                                <path
+                                    d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C0.792 0 0 0.774 0 1.729v20.542C0 23.227 0.792 24 1.771 24h20.451c0.979 0 1.771-0.773 1.771-1.729V1.729C24 0.774 23.206 0 22.225 0z" />
+                            </svg>
+                        </a>
+                        <a href="#" class="social-icon" aria-label="Twitter" target="_blank" rel="noopener noreferrer">
+                            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false">
+                                <path
+                                    d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
+                            </svg>
+                        </a>
+                        <a href="#" class="social-icon" aria-label="Facebook" target="_blank" rel="noopener noreferrer">
+                            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false">
+                                <path
+                                    d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z" />
+                            </svg>
+                        </a>
+                        <a href="#" class="social-icon" aria-label="Instagram" target="_blank" rel="noopener noreferrer">
+                            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false">
+                                <path
+                                    d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zM12 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z" />
+                            </svg>
+                        </a>
+                        <a href="#" class="social-icon" aria-label="YouTube" target="_blank" rel="noopener noreferrer">
+                            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false">
+                                <path
+                                    d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.376.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.376-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Second column: Services-->
+                <div class="footer-col">
+                    <h4>Services</h4>
+                    <a href="drives-motion.html">Industrial Drives</a>
+                    <a href="automation-control.html">Controls &amp; PLCs</a>
+                    <a href="electrical-meica.html">Electrical Systems</a>
+                    <a href="testing-commissioning.html">Testing &amp; Commissioning</a>
+                    <a href="technical-support.html">Maintenance &amp; Reliability Support</a>
+                </div>
+
+                <!-- Third column: Sectors -->
+                <div class="footer-col">
+                    <h4>Sectors</h4>
+                    <a href="manufacturing.html">Manufacturing</a>
+                    <a href="packaging.html">Packaging</a>
+                    <a href="food-beverage.html">Food & Beverage</a>
+                    <a href="water-wastewater.html">Water & Wastewater</a>
+                </div>
+
+                <!-- Fourth column: Contact-->
+                <div class="footer-col">
+                    <h4>Contact</h4>
+                    <p>38F Chigwell Lane, Loughton</p>
+                    <p>IG10 3NY, United Kingdom</p>
+                    <p>+44-1234 440 530</p>
+                    <p>sales@smartfloweng.com</p>
+                </div>
+            </div>
+
+
+            <div class="footer-legal">
+
+                <div class="copyright">
+                    © <span class="current-year">2026</span> Smart Flow Engineering Ltd. All rights reserved.
+                </div>
+            </div>
+            <div class="developer-credit">
+                <span>Managed, developed & designed by </span>
+                <a href="https://www.aliothdigital.com" target="_blank" rel="noopener noreferrer">
+                    Alioth Digital Studios
+                    <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                        style="display: inline-block; margin-left: 3px;">
+                        <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
+                        <polyline points="15 3 21 3 21 9" />
+                        <line x1="10" y1="14" x2="21" y2="3" />
+                    </svg>
+                </a>
+                <span class="heart">✦</span>
+                <span>Expert engineering solutions</span>
+            </div>
+
+        </div>
+    </footer>
+
+    <!-- Main JS -->
+
+    <dialog id="kosmek-quote-dialog" class="kosmek-quote-dialog" aria-labelledby="kosmek-quote-title" aria-describedby="kosmek-quote-description">
+        <div class="kosmek-quote-header">
+            <div>
+                <span class="kosmek-eyebrow">Smart Flow Engineering</span>
+                <h2 id="kosmek-quote-title">Request a KOSMEK quote</h2>
+                <p id="kosmek-quote-description">Tell us what you need. Your enquiry goes to our sales team.</p>
+            </div>
+            <button type="button" id="kosmek-quote-close" class="kosmek-quote-close" aria-label="Close quote form">×</button>
+        </div>
+        <form id="kosmek-quote-form" class="kosmek-quote-form" action="api/kosmek-quote.php" method="post">
+            <div class="kosmek-quote-grid">
+                <div class="kosmek-quote-field">
+                    <label for="quote-range">Product range <span aria-hidden="true">*</span></label>
+                    <select id="quote-range" name="range" required><option value="">Select a product range</option></select>
+                </div>
+                <div class="kosmek-quote-field">
+                    <label for="quote-component">Component <span aria-hidden="true">*</span></label>
+                    <select id="quote-component" name="component" required disabled><option value="">Choose a product range first</option></select>
+                </div>
+                <div class="kosmek-quote-field">
+                    <label for="quote-model">Model / part number <span class="kosmek-quote-optional">(optional)</span></label>
+                    <input id="quote-model" name="model" maxlength="160" placeholder="e.g. SWR0070">
+                </div>
+                <div class="kosmek-quote-field">
+                    <label for="quote-quantity">Quantity <span aria-hidden="true">*</span></label>
+                    <input id="quote-quantity" name="quantity" type="number" min="1" max="999999" step="1" value="1" required inputmode="numeric">
+                </div>
+                <div class="kosmek-quote-field">
+                    <label for="quote-name">Full name <span aria-hidden="true">*</span></label>
+                    <input id="quote-name" name="fullName" autocomplete="name" maxlength="120" required>
+                </div>
+                <div class="kosmek-quote-field">
+                    <label for="quote-company">Company <span class="kosmek-quote-optional">(optional)</span></label>
+                    <input id="quote-company" name="company" autocomplete="organization" maxlength="160">
+                </div>
+                <div class="kosmek-quote-field">
+                    <label for="quote-email">Email address <span aria-hidden="true">*</span></label>
+                    <input id="quote-email" name="email" type="email" autocomplete="email" maxlength="254" required>
+                </div>
+                <div class="kosmek-quote-field">
+                    <label for="quote-phone">Phone <span class="kosmek-quote-optional">(optional)</span></label>
+                    <input id="quote-phone" name="phone" type="tel" autocomplete="tel" maxlength="60">
+                </div>
+                <div class="kosmek-quote-field kosmek-quote-wide">
+                    <label for="quote-message">Application / requirements <span class="kosmek-quote-optional">(optional)</span></label>
+                    <textarea id="quote-message" name="message" rows="3" maxlength="5000" placeholder="Machine details, required delivery date, or anything else we should know…"></textarea>
+                </div>
+            </div>
+            <div class="kosmek-quote-honeypot" aria-hidden="true">
+                <label for="quote-website">Leave this field empty</label><input id="quote-website" name="website" tabindex="-1" autocomplete="off">
+            </div>
+            <input name="source" type="hidden" value="product-showcase">
+            <div id="kosmek-quote-status" class="kosmek-quote-status" role="status" aria-live="polite" tabindex="-1" hidden></div>
+            <div class="kosmek-quote-footer">
+                <p>Required fields are marked *. We’ll use your details to respond to this enquiry.</p>
+                <button type="submit" class="btn-primary" id="kosmek-quote-submit">Send quote request <i class="fas fa-arrow-right" aria-hidden="true"></i></button>
+            </div>
+        </form>
+    </dialog>
+    <noscript><p class="container">To request a KOSMEK quote, please enable JavaScript or call Smart Flow Engineering on +44 1234 440 530.</p></noscript>
+    <script src="js/main.js?v=20261107-partner-marquee"></script>
+    <script src="js/kosmek-quote.js?v=20261027-confirmation"></script>
+
+</body>
+
+</html>

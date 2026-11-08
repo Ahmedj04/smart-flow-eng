@@ -1,0 +1,62 @@
+{
+  "factory-automation": {
+    "label": "Factory Automation",
+    "components": {
+      "robotic-hand-changers": "Robotic hand changers",
+      "grippers-and-handling-components": "Grippers and handling components",
+      "positioning-and-clamping-systems": "Positioning and clamping systems",
+      "smart-series-and-accessories": "Smart Series and accessories",
+      "unsure": "Not sure - please advise"
+    }
+  },
+  "work-clamping": {
+    "label": "Work Clamping Systems",
+    "components": {
+      "swing-clamps-and-link-clamps": "Swing clamps and link clamps",
+      "work-supports-and-locating-units": "Work supports and locating units",
+      "hole-clamps-and-pallet-clamps": "Hole clamps and pallet clamps",
+      "cylinders-vices-and-accessories": "Cylinders, vices and accessories",
+      "unsure": "Not sure - please advise"
+    }
+  },
+  "mould-change": {
+    "label": "Quick Mould Change Systems",
+    "components": {
+      "quick-connect-ejector-rods": "Quick-connect ejector rods",
+      "magnetic-clamps": "Magnetic clamps",
+      "hydraulic-and-pneumatic-clamps": "Hydraulic and pneumatic clamps",
+      "operation-panels-and-control-units": "Operation panels and control units",
+      "unsure": "Not sure - please advise"
+    }
+  },
+  "die-change": {
+    "label": "Quick Die Change Systems",
+    "components": {
+      "clamping-devices": "Clamping devices",
+      "die-lifters": "Die lifters",
+      "pre-rollers": "Pre-rollers",
+      "control-units-and-accessories": "Control units and accessories",
+      "unsure": "Not sure - please advise"
+    }
+  },
+  "die-casting": {
+    "label": "Die Cast Clamping Systems",
+    "components": {
+      "clamps-and-cylinders": "Clamps and cylinders",
+      "hydraulic-units": "Hydraulic units",
+      "control-panels": "Control panels",
+      "ejector-couplers": "Ejector couplers",
+      "unsure": "Not sure - please advise"
+    }
+  },
+  "welding-washing": {
+    "label": "Welding & Washing Applications",
+    "components": {
+      "locating-pin-clamps": "Locating pin clamps",
+      "pallet-clamps": "Pallet clamps",
+      "high-power-clamps": "High-power clamps",
+      "expansion-locating-pins": "Expansion locating pins",
+      "unsure": "Not sure - please advise"
+    }
+  }
+}

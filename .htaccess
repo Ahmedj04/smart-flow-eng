@@ -1,0 +1,132 @@
+# ============================================
+# SMART FLOW ENGINEERING - .HTACCESS
+# SEO, Security & Performance Optimization
+# ============================================
+
+# Enable Rewrite Engine
+RewriteEngine On
+RewriteBase /
+
+# ============================================
+# FORCE HTTPS (UNCOMMENT WHEN SSL IS INSTALLED)
+# ============================================
+# RewriteCond %{HTTPS} off
+# RewriteRule ^(.*)$ https://%{HTTP_HOST}/$1 [R=301,L]
+
+# ============================================
+# REDIRECT WWW TO NON-WWW (SEO BEST PRACTICE)
+# ============================================
+RewriteCond %{HTTP_HOST} ^www\.(.*)$ [NC]
+RewriteRule ^(.*)$ https://%1/$1 [R=301,L]
+
+# ============================================
+# REDIRECT LEGACY PAGES TO PREVENT 404s (SEO)
+# ============================================
+RedirectMatch 301 ^/motion/?$ /drives-motion.html
+RedirectMatch 301 ^/industries-we-serve/?$ /sectors.html
+RedirectMatch 301 ^/engineered-partnership/?$ /about.html
+RedirectMatch 301 ^/l-o-systems/?$ /automation-control.html
+
+# Keep previously shared article URLs working after moving posts into /blog/.
+RewriteRule ^(industrial-automation-services-uk|automation-health-check-downtime-obsolescence-uk-manufacturing)(?:\.html)?/?$ /blog/$1.html [R=301,L]
+
+# ============================================
+# REMOVE .HTML EXTENSION FROM URLS
+# ============================================
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}\.html -f
+RewriteRule ^(.*)$ $1.html [NC,L]
+
+# ============================================
+# CUSTOM ERROR PAGES
+# ============================================
+ErrorDocument 404 /404.html
+ErrorDocument 403 /404.html
+ErrorDocument 500 /404.html
+
+# ============================================
+# CACHE CONTROL - IMPROVE PAGE SPEED (SEO FACTOR)
+# ============================================
+<IfModule mod_expires.c>
+    ExpiresActive On
+    
+    # Images - 1 year
+    ExpiresByType image/jpg "access plus 1 year"
+    ExpiresByType image/jpeg "access plus 1 year"
+    ExpiresByType image/gif "access plus 1 year"
+    ExpiresByType image/png "access plus 1 year"
+    ExpiresByType image/svg+xml "access plus 1 year"
+    ExpiresByType image/webp "access plus 1 year"
+    ExpiresByType image/x-icon "access plus 1 year"
+    
+    # CSS & JavaScript - 1 month
+    ExpiresByType text/css "access plus 1 month"
+    ExpiresByType text/javascript "access plus 1 month"
+    ExpiresByType application/javascript "access plus 1 month"
+    
+    # Fonts - 1 year
+    ExpiresByType font/ttf "access plus 1 year"
+    ExpiresByType font/otf "access plus 1 year"
+    ExpiresByType font/woff "access plus 1 year"
+    ExpiresByType font/woff2 "access plus 1 year"
+    
+    # PDF & Documents - 1 month
+    ExpiresByType application/pdf "access plus 1 month"
+</IfModule>
+
+# ============================================
+# GZIP COMPRESSION - FASTER LOADING
+# ============================================
+<IfModule mod_deflate.c>
+    AddOutputFilterByType DEFLATE text/html text/plain text/xml text/css text/javascript application/javascript application/json
+    AddOutputFilterByType DEFLATE application/x-javascript text/js
+</IfModule>
+
+# ============================================
+# SECURITY HEADERS
+# ============================================
+<IfModule mod_headers.c>
+    # Protect against XSS attacks
+    Header set X-XSS-Protection "1; mode=block"
+    
+    # Prevent MIME type sniffing
+    Header set X-Content-Type-Options "nosniff"
+    
+    # Clickjacking protection
+    Header set X-Frame-Options "SAMEORIGIN"
+    
+    # Referrer policy for SEO
+    Header set Referrer-Policy "strict-origin-when-cross-origin"
+    
+    # HSTS (HTTP Strict Transport Security) - Uncomment when HTTPS is enabled
+    # Header set Strict-Transport-Security "max-age=31536000; includeSubDomains"
+</IfModule>
+
+# ============================================
+# PREVENT DIRECTORY LISTING
+# ============================================
+Options -Indexes
+
+# ============================================
+# BLOCK ACCESS TO SENSITIVE FILES
+# ============================================
+<FilesMatch "^\.">
+    Order allow,deny
+    Deny from all
+</FilesMatch>
+
+<FilesMatch "(composer\.json|package\.json|\.env|\.git|README\.md)">
+    Order allow,deny
+    Deny from all
+</FilesMatch>
+
+# ============================================
+# SET DEFAULT CHARSET
+# ============================================
+AddDefaultCharset UTF-8
+
+# ============================================
+# REDIRECT TRAILING SLASHES
+# ============================================
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)/$ /$1 [R=301,L]

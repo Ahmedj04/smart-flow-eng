@@ -1,0 +1,100 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Smart Flow Engineering",
+  "alternateName": "Smart Flow Engineering Ltd",
+  "url": "https://www.smartfloweng.com",
+  "logo": "https://www.smartfloweng.com/assets/images/Logo/logo.png",
+  "image": "https://www.smartfloweng.com/assets/images/Logo/logo.png",
+  "description": "Smart Flow Engineering supports system integrators, OEMs, contractors and industrial operators with industrial electrical installation, automation integration, drives and control upgrades, testing and commissioning.",
+  "email": "sales@smartfloweng.com",
+  "telephone": "+44-1234-440530",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "38F Chigwell Lane",
+    "addressLocality": "Loughton",
+    "postalCode": "IG10 3NY",
+    "addressCountry": "UK"
+  },
+  "foundingDate": "2024",
+  "founder": {
+    "@type": "Person",
+    "name": "Smart Flow Engineering Team"
+  },
+  "sameAs": [
+    "https://www.linkedin.com/company/smartfloweng",
+    "https://twitter.com/smartfloweng",
+    "https://www.facebook.com/smartfloweng"
+  ],
+  "knowsLanguage": [
+    "English",
+    "Arabic",
+    "French"
+  ],
+  "areaServed": "United Kingdom",
+  "hasOfferCatalog": {
+    "@type": "OfferCatalog",
+    "name": "Engineering Services",
+    "itemListElement": [
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Industrial Electrical Engineering",
+          "description": "Site installation, modifications and electrical completion for industrial equipment and project work packages.",
+          "url": "https://smartfloweng.com/electrical-meica.html"
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Drives & Motor Control",
+          "description": "Assessment, replacement and retrofit support for AC/DC drives and motor-control equipment.",
+          "url": "https://smartfloweng.com/drives-motion.html"
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Automation & Controls",
+          "description": "PLC, HMI and control-system upgrade and integration support for existing machinery and plant.",
+          "url": "https://smartfloweng.com/automation-control.html"
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "System Integration & Installation",
+          "description": "Connecting new equipment with existing machinery, controls and site infrastructure within an agreed scope.",
+          "url": "https://smartfloweng.com/services.html"
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Testing & Commissioning",
+          "description": "Structured verification, start-up assistance and handover support for electrical and automation installations.",
+          "url": "https://smartfloweng.com/testing-commissioning.html"
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Maintenance & Reliability Support",
+          "description": "Planned support after installation and during outages to help keep industrial equipment supportable.",
+          "url": "https://smartfloweng.com/technical-support.html"
+        }
+      }
+    ]
+  },
+  "parentOrganization": {
+    "@type": "Organization",
+    "name": "Pearlcon",
+    "url": "https://pearlcon.com/"
+  }
+}
