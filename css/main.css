@@ -4308,3 +4308,303 @@ body.kosmek-quote-open { overflow: hidden; }
     .strategic-partner-list[aria-hidden="true"] { display: none; }
     .strategic-partners-marquee { mask-image: none; -webkit-mask-image: none; }
 }
+
+/* ==========================================================
+   SHARED UI REFINEMENTS
+   Compact corners, brand-colour surfaces and homepage layouts.
+   ========================================================== */
+:root {
+    --radius-sm: 3px;
+    --radius-md: 4px;
+    --radius-lg: 6px;
+    --radius-xl: 8px;
+    --radius-2xl: 10px;
+    --radius-3xl: 12px;
+}
+
+/* Keep all action controls compact and consistent. */
+:is(.btn-primary, .btn-secondary, .btn-outline, .quote-nav-btn, .service-btn, button[type="submit"]) {
+    border-radius: 4px !important;
+}
+
+/* The shared card radius applies to cards across services, sectors and content pages. */
+:is(.card, [class*="-card"], .service-detail-card, .blog-card, .sector-hero-card, .industry-card-enhanced) {
+    border-radius: 8px !important;
+}
+
+/* Homepage audience block: a white card on the requested gray-50 section. */
+#who-we-support {
+    background: var(--gray-50) !important;
+    color: var(--primary);
+}
+
+#who-we-support .health-check-card {
+    display: block;
+    padding: clamp(30px, 4vw, 52px);
+    background: var(--white) !important;
+    border: 1px solid var(--gray-200) !important;
+    box-shadow: var(--shadow-sm);
+}
+
+#who-we-support .health-check-content h2 {
+    color: var(--primary) !important;
+}
+
+#who-we-support .health-check-content p {
+    color: var(--gray-600) !important;
+}
+
+#who-we-support .health-check-content .who-support-subtitle {
+    color: var(--secondary-dark) !important;
+}
+
+#who-we-support .health-check-features {
+    gap: 14px;
+    margin: 30px 0;
+}
+
+#who-we-support .health-feature-item {
+    min-height: 104px;
+    padding: 20px 22px;
+    color: var(--gray-700) !important;
+    background: var(--gray-50);
+    border: 1px solid var(--gray-200);
+    border-radius: 6px;
+    line-height: 1.6;
+}
+
+#who-we-support .health-feature-item i {
+    color: var(--secondary-dark) !important;
+}
+
+#who-we-support .health-feature-item strong {
+    display: block;
+    margin-bottom: 4px;
+    color: var(--primary) !important;
+}
+
+/* Project lifecycle: a single structured six-stage grid rather than floating cards. */
+#capabilities {
+    background: var(--white) !important;
+}
+
+#capabilities .five-steps-grid {
+    gap: 0;
+    margin-top: 38px;
+    overflow: hidden;
+    border: 1px solid var(--gray-200);
+    border-radius: 8px;
+    background: var(--white);
+}
+
+#capabilities .step-card {
+    min-height: 286px;
+    padding: 34px 30px;
+    border: 0;
+    border-right: 1px solid var(--gray-200);
+    border-bottom: 1px solid var(--gray-200);
+    border-radius: 0 !important;
+    box-shadow: none;
+    background: var(--white);
+}
+
+#capabilities .step-card:nth-child(3n) {
+    border-right: 0;
+}
+
+#capabilities .step-card:nth-last-child(-n + 3) {
+    border-bottom: 0;
+}
+
+#capabilities .step-card:hover {
+    transform: none;
+    border-color: var(--gray-200);
+    box-shadow: inset 0 4px 0 var(--secondary);
+    background: var(--gray-50);
+}
+
+#capabilities .step-num {
+    width: auto;
+    height: auto;
+    margin: 0 0 38px;
+    padding: 0;
+    border-radius: 0;
+    background: transparent;
+    box-shadow: none;
+    color: var(--secondary-dark);
+    font-size: .78rem;
+    letter-spacing: .12em;
+}
+
+#capabilities .step-card h3 {
+    margin-bottom: 8px;
+    color: var(--primary);
+    font-size: 1.4rem;
+}
+
+#capabilities .step-card h4 {
+    color: var(--secondary-dark) !important;
+    font-size: .9rem !important;
+    line-height: 1.45;
+}
+
+#capabilities .step-card p {
+    color: var(--gray-600);
+    font-size: .9rem;
+    line-height: 1.7;
+}
+
+/* Continue the light / dark section rhythm through the homepage. */
+.homepage-partnerships,
+.strategic-partners-section {
+    background: var(--gray-50) !important;
+}
+
+.about-premium {
+    background: var(--white) !important;
+}
+
+@media (max-width: 992px) {
+    #capabilities .step-card:nth-child(3n) {
+        border-right: 1px solid var(--gray-200);
+    }
+
+    #capabilities .step-card:nth-child(2n) {
+        border-right: 0;
+    }
+
+    #capabilities .step-card:nth-last-child(-n + 3) {
+        border-bottom: 1px solid var(--gray-200);
+    }
+
+    #capabilities .step-card:nth-last-child(-n + 2) {
+        border-bottom: 0;
+    }
+}
+
+@media (max-width: 768px) {
+    #who-we-support .health-check-features {
+        grid-template-columns: 1fr;
+    }
+
+    #who-we-support .health-feature-item {
+        min-height: 0;
+        padding: 18px;
+    }
+
+    #capabilities .five-steps-grid {
+        grid-template-columns: 1fr;
+    }
+
+    #capabilities .step-card,
+    #capabilities .step-card:nth-child(2n),
+    #capabilities .step-card:nth-child(3n) {
+        min-height: 0;
+        border-right: 0;
+        border-bottom: 1px solid var(--gray-200);
+    }
+
+    #capabilities .step-card:last-child {
+        border-bottom: 0;
+    }
+}
+
+/* Static About panel: remove decorative animation and use a single clean border. */
+.about-premium::before,
+.about-premium::after {
+    display: none;
+}
+
+.about-premium :is(*, *::before, *::after) {
+    animation: none !important;
+    transition: none !important;
+}
+
+.about-premium .header-glow-line {
+    width: 64px;
+    background: var(--secondary);
+    border-radius: 2px;
+}
+
+.about-premium .partner-card-luxe {
+    padding: 44px 36px;
+    background: var(--primary-dark);
+    border: 1px solid var(--secondary);
+    border-radius: 8px !important;
+    box-shadow: none;
+}
+
+.about-premium .partner-card-luxe:hover {
+    transform: none;
+}
+
+.about-premium .animated-border,
+.about-premium .partner-glow-orb,
+.about-premium .icon-pulse-ring {
+    display: none;
+}
+
+.about-premium .partner-glow-divider {
+    width: 52px;
+    background: var(--secondary);
+    border-radius: 2px;
+}
+
+/* Keep stage numbers on the same line as their lifecycle title. */
+#capabilities .step-card {
+    display: grid;
+    grid-template-columns: auto minmax(0, 1fr);
+    column-gap: 10px;
+    align-content: start;
+}
+
+#capabilities .step-num {
+    grid-column: 1;
+    grid-row: 1;
+    display: inline-flex;
+    align-items: center;
+    height: 1.7em;
+    margin: 0;
+    font-size: .82rem;
+    font-variant-numeric: tabular-nums;
+}
+
+#capabilities .step-card h3 {
+    grid-column: 2;
+    grid-row: 1;
+    align-self: center;
+    margin: 0;
+}
+
+#capabilities .step-card h4,
+#capabilities .step-card p {
+    grid-column: 1 / -1;
+}
+
+#capabilities .step-card h4 {
+    margin: 18px 0 10px !important;
+}
+
+#capabilities .step-card p {
+    margin: 0;
+}
+
+/* A slightly smaller desktop menu gives every item room without expanding the page shell. */
+@media (min-width: 993px) {
+    .nav-flex {
+        gap: 22px;
+    }
+
+    .nav-links {
+        gap: 23px;
+    }
+
+    .nav-links a {
+        font-size: .89rem;
+    }
+
+    .quote-nav-btn {
+        padding: 9px 15px;
+        white-space: nowrap;
+    }
+}
