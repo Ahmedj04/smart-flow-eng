@@ -1130,6 +1130,18 @@ label {
    MOBILE RESPONSIVE DROPDOWN - FIXED
    ============================================ */
 @media (max-width: 992px) {
+    /* Keep the full-width Services trigger visually aligned with the other mobile menu links. */
+    .nav-links .dropdown-trigger {
+        position: relative;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .nav-links .dropdown-trigger i {
+        position: absolute;
+        right: 0;
+    }
+
     .dropdown {
         width: 100%;
         border-bottom: 1px solid var(--gray-100);
