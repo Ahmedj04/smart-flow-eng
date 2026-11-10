@@ -69,6 +69,45 @@
             margin: 0 8px;
         }
         
+        /* About Intro (Who We Are & Structure) */
+        .about-intro-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+            margin-top: 60px;
+        }
+
+        .about-structure-card {
+            background: var(--gray-50);
+            border-radius: var(--radius-xl);
+            padding: 24px;
+            margin-top: 20px;
+        }
+
+        .about-structure-card ul {
+            list-style: none;
+            padding-left: 0;
+            margin: 0;
+        }
+
+        .about-structure-card li {
+            display: flex;
+            align-items: flex-start;
+            gap: 10px;
+            margin-bottom: 8px;
+            line-height: 1.5;
+        }
+
+        .about-structure-card li:last-child {
+            margin-bottom: 0;
+        }
+
+        .about-structure-card li i {
+            color: var(--secondary);
+            margin-top: 3px;
+            flex-shrink: 0;
+        }
+
         /* Mission Vision Section */
         .mission-vision-grid {
             display: grid;
@@ -577,6 +616,14 @@
         }
         
         @media (max-width: 768px) {
+            .about-intro-grid {
+                grid-template-columns: 1fr;
+                gap: 32px;
+                margin-top: 36px;
+            }
+            .about-structure-card {
+                padding: 20px 16px;
+            }
             .mission-vision-grid {
                 grid-template-columns: 1fr;
             }
@@ -613,6 +660,13 @@
         }
         
         @media (max-width: 576px) {
+            .about-intro-grid {
+                gap: 26px;
+                margin-top: 28px;
+            }
+            .about-structure-card {
+                padding: 18px 14px;
+            }
             .delivery-icon-wrapper {
                 width: 65px;
                 height: 65px;
@@ -774,7 +828,7 @@
             <p style="font-size: 1.1rem;">Smart Flow Engineering Ltd is a specialist industrial electrical and automation engineering delivery business. <span style="opacity: 0.6; font-size: 0.95rem;">(Pearlcon is our parent company.)</span></p>
         </div>
         
-        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 40px; margin-top: 60px;">
+        <div class="about-intro-grid">
             <div>
                 <h3>Who We Are</h3>
                 <p>Smart Flow Engineering supports system integrators, OEMs, contractors and industrial operators with electrical installation, automation integration, drives and control upgrades, testing and commissioning.</p>
@@ -783,15 +837,15 @@
             </div>
             <div>
                 <h3>Our Structure</h3>
-             <p>Pearlcon is our parent company. Its leadership experience and support are distinct from Smart Flow’s operating history; Pearlcon projects are not Smart Flow project references.</p>
-                <div style="background: var(--gray-50); border-radius: var(--radius-xl); padding: 24px; margin-top: 20px;">
+                <p>Pearlcon is our parent company. Its leadership experience and support are distinct from Smart Flow’s operating history; Pearlcon projects are not Smart Flow project references.</p>
+                <div class="about-structure-card">
                     <p style="margin-bottom: 12px;"><strong>We agree for each work package:</strong></p>
-                    <ul style="list-style: none; padding-left: 0;">
-                        <li style="margin-bottom: 8px;"><i class="fas fa-check-circle" style="color: var(--secondary); margin-right: 8px;"></i> Scope &amp; Delivery Responsibilities</li>
-                        <li style="margin-bottom: 8px;"><i class="fas fa-check-circle" style="color: var(--secondary); margin-right: 8px;"></i> Required Engineering Competencies</li>
-                        <li style="margin-bottom: 8px;"><i class="fas fa-check-circle" style="color: var(--secondary); margin-right: 8px;"></i> Supervision &amp; Site Requirements</li>
-                        <li style="margin-bottom: 8px;"><i class="fas fa-check-circle" style="color: var(--secondary); margin-right: 8px;"></i> Resources &amp; Availability</li>
-                        <li><i class="fas fa-check-circle" style="color: var(--secondary); margin-right: 8px;"></i> Checks &amp; Handover Information</li>
+                    <ul>
+                        <li><i class="fas fa-check-circle"></i> <span>Scope &amp; Delivery Responsibilities</span></li>
+                        <li><i class="fas fa-check-circle"></i> <span>Required Engineering Competencies</span></li>
+                        <li><i class="fas fa-check-circle"></i> <span>Supervision &amp; Site Requirements</span></li>
+                        <li><i class="fas fa-check-circle"></i> <span>Resources &amp; Availability</span></li>
+                        <li><i class="fas fa-check-circle"></i> <span>Checks &amp; Handover Information</span></li>
                     </ul>
                 </div>
             </div>
