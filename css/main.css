@@ -891,6 +891,102 @@ label {
     }
 }
 
+/* Service capability rows: titles and descriptions stay in deliberate columns. */
+.service-features-list li {
+    display: grid !important;
+    grid-template-columns: 20px minmax(120px, .85fr) minmax(0, 1.35fr);
+    align-items: start !important;
+    column-gap: 12px;
+    line-height: 1.55;
+}
+
+.service-features-list li > i {
+    grid-column: 1;
+    width: 20px;
+    margin-top: .2em;
+}
+
+.service-features-list li > strong {
+    grid-column: 2;
+    color: var(--primary);
+    line-height: inherit;
+}
+
+.service-feature-description {
+    grid-column: 3;
+    min-width: 0;
+    color: var(--gray-700);
+    line-height: inherit;
+}
+
+/* On phones, keep the capability name and its detail together as a readable stack. */
+@media (max-width: 600px) {
+    .service-features-list li {
+        grid-template-columns: 20px minmax(0, 1fr);
+        row-gap: 4px;
+    }
+
+    .service-features-list li > i {
+        grid-row: 1 / span 2;
+    }
+
+    .service-feature-description {
+        grid-column: 2;
+        grid-row: 2;
+    }
+}
+
+/* Packaging sector: prevent the four benefit cards from overflowing on smaller screens. */
+.packaging-trust-section,
+.sector-trust-section {
+    background: var(--gray-50);
+    padding: 60px 0;
+}
+
+.packaging-trust-grid,
+.sector-trust-grid {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 24px;
+}
+
+.packaging-trust-grid .card,
+.sector-trust-grid .card {
+    min-width: 0;
+    height: 100%;
+    overflow-wrap: anywhere;
+}
+
+@media (max-width: 900px) {
+    .packaging-trust-grid,
+    .sector-trust-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+@media (max-width: 560px) {
+    .packaging-trust-section,
+    .sector-trust-section {
+        padding: 48px 0;
+    }
+
+    .packaging-trust-section .section-header,
+    .sector-trust-section .section-header {
+        margin-bottom: 32px;
+    }
+
+    .packaging-trust-grid,
+    .sector-trust-grid {
+        grid-template-columns: minmax(0, 1fr);
+        gap: 16px;
+    }
+
+    .packaging-trust-grid .card,
+    .sector-trust-grid .card {
+        padding: 26px 22px;
+    }
+}
+
 /* Dropdown Menu - Modern Card Style */
 .dropdown-menu {
     position: absolute;
