@@ -229,17 +229,15 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 
     const sectionPages = {
-        '/products-technology': '/services',
         '/kosmek-products': '/services',
         '/manufacturing': '/sectors',
         '/packaging': '/sectors',
         '/food-beverage': '/sectors',
         '/water-wastewater': '/sectors',
-        '/energy-power': '/sectors',
-        '/data-centres': '/sectors',
         '/blog/automation-health-check-downtime-obsolescence-uk-manufacturing': '/blog',
         '/blog/industrial-automation-services-uk': '/blog',
-        '/blog/factory-automation-reliability': '/blog'
+        '/blog/factory-automation-reliability': '/blog',
+        '/blog/plc-upgrade-services-modernising-control-systems': '/blog'
     };
     const sectionPath = sectionPages[currentPath] || currentPath;
     const currentLink = navLinksAll.find(link => {
