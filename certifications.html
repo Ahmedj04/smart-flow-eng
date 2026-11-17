@@ -657,7 +657,7 @@
             <span>Certifications and Accreditations</span>
         </div>
         <h1>Certifications and Accreditations</h1>
-        <p>Certifications and accreditations for Smart Flow Engineering Ltd. View the documents and their scope for your supplier onboarding requirements.</p>
+        <p>Certifications and accreditations for Smart Flow Engineering Ltd, backed by parent company Pearlcon’s ISO 9001:2015 certified quality management systems. View the documents and their scope for your supplier onboarding requirements.</p>
     </div>
 </section>
 
@@ -718,7 +718,22 @@
                     </div>
                 </div>
                 
-                <!-- Slide 4 - SC Health & Safety Product Approved -->
+                <!-- Slide 4 - ISO 9001:2015 Quality Management (via Pearlcon Group) -->
+                <div class="cert-slide">
+                    <div class="cert-card-premium">
+                        <div class="cert-preview-area" data-pdf="assets/Documents/CompanyProfile.pdf" data-title="ISO 9001:2015 Quality Management (via Pearlcon Group)">
+                            <img src="assets/images/CertificateIcons/iso.avif" alt="ISO 9001:2015 Quality Management" class="cert-preview-img" onerror="this.src='assets/images/CertificateIcons/pearlcon.jpg'">
+                            <div class="cert-preview-overlay"><i class="fas fa-eye"></i><span>Click to View</span></div>
+                        </div>
+                        <div class="cert-card-content">
+                            <h3>ISO 9001:2015 Quality Management</h3>
+                            <div class="cert-status-badge"><i class="fas fa-check-circle"></i> Pearlcon Group Certified</div>
+                            <div class="cert-details"><span class="cert-detail-item"><i class="fas fa-certificate"></i> ISO 9001:2015</span><span class="cert-detail-item"><i class="fas fa-shield-alt"></i> Quality Assurance</span></div>
+                            <p class="cert-description">Operating within the Pearlcon Group framework, Smart Flow adheres to ISO 9001:2015 certified quality management systems and established engineering governance.</p>
+                            <button class="view-only-btn" data-pdf="assets/Documents/CompanyProfile.pdf" data-title="ISO 9001:2015 Quality Management (via Pearlcon Group)"><i class="fas fa-eye"></i> View Quality Framework</button>
+                        </div>
+                    </div>
+                </div>
                 
                 
                 <!-- Slide 5 - ICO Registered -->
@@ -875,7 +890,7 @@
     let autoScrollInterval;
     const slideGap = 30;
     const autoDelay = 4500;
-    const totalDots = Math.min(3, slides.length);
+    const totalDots = slides.length;
     
     // Create dots
     for (let i = 0; i < totalDots; i++) {
