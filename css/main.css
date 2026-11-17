@@ -1982,6 +1982,65 @@ label {
     color: #2dd4bf;
 }
 
+/* Hero MRO & Pearlcon Affiliation Badge */
+.hero-mro-badge {
+    display: inline-flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 8px;
+    background: rgba(0, 163, 178, 0.22);
+    color: #2dd4bf;
+    border: 1px solid rgba(45, 212, 191, 0.38);
+    font-size: 0.82rem;
+    font-weight: 500;
+    line-height: 1.4;
+    letter-spacing: 0.3px;
+    text-transform: uppercase;
+    padding: 6px 14px;
+    border-radius: 30px;
+    margin-bottom: 0;
+    max-width: 100%;
+}
+
+.hero-mro-badge a {
+    color: #ffffff;
+    font-weight: 700;
+    transition: color 0.2s ease;
+}
+
+.hero-mro-badge a:hover {
+    color: #2dd4bf;
+}
+
+.hero-mro-badge .hero-mro-iso {
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+    background: rgba(45, 212, 191, 0.2);
+    border: 1px solid rgba(45, 212, 191, 0.45);
+    color: #ffffff;
+    font-size: 0.7rem;
+    font-weight: 700;
+    padding: 2px 7px;
+    border-radius: 4px;
+    letter-spacing: 0.4px;
+    white-space: nowrap;
+}
+
+@media (max-width: 640px) {
+    .hero-mro-badge {
+        font-size: 0.74rem;
+        padding: 7px 12px;
+        border-radius: 8px;
+        line-height: 1.45;
+        gap: 6px;
+    }
+    .hero-mro-badge .hero-mro-iso {
+        font-size: 0.66rem;
+        padding: 1px 5px;
+    }
+}
+
 /* Complete Lifecycle Flow Card (Option 1 - Project Lifecycle Section) */
 .lifecycle-flow-card {
     background: var(--white);
