@@ -237,9 +237,11 @@ document.addEventListener('DOMContentLoaded', function() {
         '/blog/automation-health-check-downtime-obsolescence-uk-manufacturing': '/blog',
         '/blog/industrial-automation-services-uk': '/blog',
         '/blog/factory-automation-reliability': '/blog',
-        '/blog/plc-upgrade-services-modernising-control-systems': '/blog'
+        '/blog/plc-upgrade-services-modernising-control-systems': '/blog',
+        '/blog/drive-retrofit-services': '/blog',
+        '/blog/food-and-beverage-automation-solutions': '/blog'
     };
-    const sectionPath = sectionPages[currentPath] || currentPath;
+    const sectionPath = sectionPages[currentPath] || (currentPath.startsWith('/blog') ? '/blog' : currentPath);
     const currentLink = navLinksAll.find(link => {
         const href = link.getAttribute('href');
         if (!href || href.startsWith('#') || link.classList.contains('quote-nav-btn')) {
